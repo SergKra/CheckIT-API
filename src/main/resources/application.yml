@@ -1,0 +1,17 @@
+# Server configuration
+server:
+  port: 8080
+spring:
+  output.ansi.enabled: DETECT
+  http.encoding:
+    charset: UTF-8
+    enabled: true
+    force: true
+
+#JWT configuration
+jwt:
+  secret: "jwtsecret"
+  access-expiration-time-millis: 86400000 # 1 day
+  refresh-expiration-time-millis: 2592000000 # 30 days
+  header: "Authorization"
+  prefix: "Bearer "
