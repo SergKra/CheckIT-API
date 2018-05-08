@@ -1,9 +1,9 @@
 package com.checkit.backend.sso.security;
 
-import com.checkit.backend.common.exeption.JwtExpiredException;
+import com.checkit.backend.sso.exception.JwtExpiredException;
 import com.checkit.backend.common.model.dto.response.CheckItGenericResponse;
 import com.checkit.backend.common.model.dto.response.CheckItResponseType;
-import com.checkit.backend.common.utils.JsonUtils;
+import com.checkit.backend.common.util.JsonUtils;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.authentication.AuthenticationCredentialsNotFoundException;
 import org.springframework.security.authentication.BadCredentialsException;

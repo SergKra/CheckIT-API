@@ -12,7 +12,6 @@ import javax.validation.constraints.Size;
  * Created by Gleb Dovzhenko on 23.04.2018.
  */
 @Entity
-@Table(name = "user_data")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

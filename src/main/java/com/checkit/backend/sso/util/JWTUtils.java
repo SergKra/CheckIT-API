@@ -1,7 +1,7 @@
-package com.checkit.backend.common.utils;
+package com.checkit.backend.sso.util;
 
-import com.checkit.backend.common.exeption.JwtExpiredException;
-import com.checkit.backend.common.exeption.JwtParsingException;
+import com.checkit.backend.sso.exception.JwtExpiredException;
+import com.checkit.backend.sso.exception.JwtParsingException;
 import com.checkit.backend.common.model.dto.JwtParsed;
 import com.checkit.backend.common.service.CheckValidator;
 import io.jsonwebtoken.*;

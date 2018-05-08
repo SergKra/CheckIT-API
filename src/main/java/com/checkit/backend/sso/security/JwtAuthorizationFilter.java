@@ -1,7 +1,7 @@
 package com.checkit.backend.sso.security;
 
 import com.checkit.backend.common.model.dto.JwtParsed;
-import com.checkit.backend.common.utils.JWTUtils;
+import com.checkit.backend.sso.util.JWTUtils;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.context.SecurityContextHolder;

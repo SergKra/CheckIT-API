@@ -4,7 +4,6 @@ import com.checkit.backend.common.exeption.BadRequestException;
 import com.checkit.backend.common.model.persistent.ApplicationUser;
 import com.checkit.backend.common.model.persistent.UserRole;
 import com.checkit.backend.common.reopsitory.ApplicationUserRepository;
-import com.checkit.backend.common.reopsitory.UserDataRepository;
 import com.checkit.backend.sso.model.dto.request.SignUpUserRequest;
 import lombok.NonNull;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -23,16 +22,13 @@ import java.util.Optional;
 @Service
 public class UserDetailsServiceImpl implements UserDetailsService {
 
-    private final UserDataRepository userDataRepository;
     private final ApplicationUserRepository applicationUserRepository;
     private final BCryptPasswordEncoder bCryptPasswordEncoder;
 
     @Autowired
-    public UserDetailsServiceImpl(UserDataRepository userDataRepository,
-                                  ApplicationUserRepository applicationUserRepository,
+    public UserDetailsServiceImpl(ApplicationUserRepository applicationUserRepository,
                                   BCryptPasswordEncoder bCryptPasswordEncoder) {
 
-        this.userDataRepository = userDataRepository;
         this.applicationUserRepository = applicationUserRepository;
         this.bCryptPasswordEncoder = bCryptPasswordEncoder;
     }
@@ -47,6 +43,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         return probablyUserAccount.get();
     }
 
+    @Transactional
     public ApplicationUser registerUser(@Valid SignUpUserRequest signUpUserRequest) {
 
         if(applicationUserRepository.findByEmail(signUpUserRequest.getEmail()).isPresent())

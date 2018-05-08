@@ -1,4 +1,4 @@
-package com.checkit.backend.common.utils;
+package com.checkit.backend.common.util;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 

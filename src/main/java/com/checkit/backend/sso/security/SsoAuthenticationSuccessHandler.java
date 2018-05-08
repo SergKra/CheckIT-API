@@ -1,6 +1,6 @@
 package com.checkit.backend.sso.security;
 
-import com.checkit.backend.common.utils.JsonUtils;
+import com.checkit.backend.common.util.JsonUtils;
 import com.checkit.backend.sso.model.JwtAuthenticationToken;
 import com.checkit.backend.sso.model.dto.response.OnUserAuthenticatedResponse;
 import org.springframework.security.core.Authentication;

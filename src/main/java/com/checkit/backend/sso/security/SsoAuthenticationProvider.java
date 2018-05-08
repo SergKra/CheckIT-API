@@ -1,7 +1,7 @@
 package com.checkit.backend.sso.security;
 
 import com.checkit.backend.common.model.persistent.ApplicationUser;
-import com.checkit.backend.common.utils.JWTUtils;
+import com.checkit.backend.sso.util.JWTUtils;
 import com.checkit.backend.sso.model.JwtAuthenticationToken;
 import com.checkit.backend.sso.service.UserDetailsServiceImpl;
 import lombok.extern.slf4j.Slf4j;

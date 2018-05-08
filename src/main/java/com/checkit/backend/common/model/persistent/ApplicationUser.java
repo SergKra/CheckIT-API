@@ -14,7 +14,6 @@ import java.util.Set;
  */
 
 @Entity
-@Table(name = "application_user")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor

@@ -1,4 +1,4 @@
-package com.checkit.backend.common.exeption;
+package com.checkit.backend.sso.exception;
 
 import org.springframework.security.core.AuthenticationException;
 

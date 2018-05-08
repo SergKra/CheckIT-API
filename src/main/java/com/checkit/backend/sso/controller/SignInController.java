@@ -3,7 +3,7 @@ package com.checkit.backend.sso.controller;
 import com.checkit.backend.common.model.dto.JwtParsed;
 import com.checkit.backend.common.model.dto.response.CheckItGenericResponse;
 import com.checkit.backend.common.model.dto.response.CheckItResponseType;
-import com.checkit.backend.common.utils.JWTUtils;
+import com.checkit.backend.sso.util.JWTUtils;
 import com.checkit.backend.sso.model.dto.request.JwtRefreshRequest;
 import com.checkit.backend.sso.model.dto.response.JwtResponse;
 import com.checkit.backend.sso.service.JwtBlackListService;
