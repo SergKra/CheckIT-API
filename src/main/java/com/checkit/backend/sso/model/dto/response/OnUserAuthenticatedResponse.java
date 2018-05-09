@@ -1,6 +1,6 @@
 package com.checkit.backend.sso.model.dto.response;
 
-import com.checkit.backend.common.model.persistent.UserRole;
+import com.checkit.backend.sso.model.persistent.UserRole;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 

@@ -1,6 +1,6 @@
 package com.checkit.backend.sso.controller;
 
-import com.checkit.backend.common.model.persistent.ApplicationUser;
+import com.checkit.backend.sso.model.persistent.ApplicationUser;
 import com.checkit.backend.sso.model.dto.request.SignUpUserRequest;
 import com.checkit.backend.sso.model.dto.response.SignUpUserResponse;
 import com.checkit.backend.sso.service.UserDetailsServiceImpl;

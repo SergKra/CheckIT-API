@@ -1,6 +1,6 @@
-package com.checkit.backend.common.reopsitory;
+package com.checkit.backend.sso.repository;
 
-import com.checkit.backend.common.model.persistent.ApplicationUser;
+import com.checkit.backend.sso.model.persistent.ApplicationUser;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;

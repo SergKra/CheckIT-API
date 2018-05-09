@@ -1,9 +1,9 @@
 package com.checkit.backend.sso.service;
 
 import com.checkit.backend.common.exeption.BadRequestException;
-import com.checkit.backend.common.model.persistent.ApplicationUser;
-import com.checkit.backend.common.model.persistent.UserRole;
-import com.checkit.backend.common.reopsitory.ApplicationUserRepository;
+import com.checkit.backend.sso.model.persistent.ApplicationUser;
+import com.checkit.backend.sso.model.persistent.UserRole;
+import com.checkit.backend.sso.repository.ApplicationUserRepository;
 import com.checkit.backend.sso.model.dto.request.SignUpUserRequest;
 import lombok.NonNull;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -51,7 +51,7 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 
         ApplicationUser applicationUser = new ApplicationUser(bCryptPasswordEncoder.encode(signUpUserRequest.getPassword()),
                                                               signUpUserRequest.getEmail(),
-                UserRole.USER);
+                                                              UserRole.USER);
         applicationUserRepository.save(applicationUser);
         return applicationUser;
     }

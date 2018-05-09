@@ -1,6 +1,6 @@
 package com.checkit.backend.sso.model;
 
-import com.checkit.backend.common.model.persistent.ApplicationUser;
+import com.checkit.backend.sso.model.persistent.ApplicationUser;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import org.springframework.security.core.Authentication;

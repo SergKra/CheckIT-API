@@ -1,4 +1,4 @@
-package com.checkit.backend.common.model.persistent;
+package com.checkit.backend.sso.model.persistent;
 
 import lombok.*;
 import org.springframework.security.core.GrantedAuthority;

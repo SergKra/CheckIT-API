@@ -1,4 +1,4 @@
-package com.checkit.backend.common.model.dto;
+package com.checkit.backend.sso.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

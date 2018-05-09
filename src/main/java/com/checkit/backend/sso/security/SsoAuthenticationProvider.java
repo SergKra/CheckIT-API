@@ -1,6 +1,6 @@
 package com.checkit.backend.sso.security;
 
-import com.checkit.backend.common.model.persistent.ApplicationUser;
+import com.checkit.backend.sso.model.persistent.ApplicationUser;
 import com.checkit.backend.sso.util.JWTUtils;
 import com.checkit.backend.sso.model.JwtAuthenticationToken;
 import com.checkit.backend.sso.service.UserDetailsServiceImpl;

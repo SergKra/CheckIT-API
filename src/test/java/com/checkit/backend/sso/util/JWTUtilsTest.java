@@ -1,6 +1,6 @@
 package com.checkit.backend.sso.util;
 
-import com.checkit.backend.common.model.dto.JwtParsed;
+import com.checkit.backend.sso.model.JwtParsed;
 import com.checkit.backend.sso.exception.JwtExpiredException;
 import com.checkit.backend.sso.exception.JwtParsingException;
 import org.junit.Test;
