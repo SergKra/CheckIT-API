@@ -18,10 +18,3 @@ spring:
     
     
 
-#JWT configuration
-jwt:
-  secret: "jwtsecret"
-  access-expiration-time-millis: 86400000 # 1 day
-  refresh-expiration-time-millis: 2592000000 # 30 days
-  header: "Authorization"
-  prefix: "Bearer "
