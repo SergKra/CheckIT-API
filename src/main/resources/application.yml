@@ -16,7 +16,7 @@ spring:
     username: ${JDBC_DATABASE_USERNAME}
     password: ${JDBC_DATABASE_PASSWORD}
     
-    management.security.enabled=false
+    
 
 #JWT configuration
 jwt:
